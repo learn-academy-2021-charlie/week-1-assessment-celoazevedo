@@ -55,9 +55,9 @@ var myString1 = "bravo"
 var myString2 = "charlie"
 
 // creat a funciton with one parameter (in this case a string). 
-// use the string split method to separed each character in the string
-// use the string reverse method to reverse the order of the characters in the string
-// use the join method to join all of the character into one string
+// use the string split method to separate each character in the string and store the characters as elements in an array.
+// use the string reverse method to reverse the order of the order of the elements in the array
+// use the join method to join all of the string elements in the array and convert it into one string
 
 const reverseWord = (word) => {
     return word.split('').reverse().join('')
@@ -75,11 +75,28 @@ var numberExample2 = 27
 var numberExample3 = 7
 var numberExample4 = 19
 
+// create a function with two parametes (in this case the funciton will be taking two numbers as arguments).
+// use conditional statements to check which number is the largest
+// subtract the smaller from the largest
 
+const subtractSmallFromLarge = (num1, num2) => {
+    if (num1 < num2) {
+        return num2 - num1
+    } else if (num1 > num2) {
+        return num1 - num2
+    } else {
+        return `${num1} is equal to ${num2}`
+    }
+}
+
+console.log(subtractSmallFromLarge(numberExample1, numberExample2))
+console.log(subtractSmallFromLarge(numberExample3, numberExample4))
 
 // --------------------5) Copy/paste your code from #4. Refactor your code to also accept non-number edge cases. Inform your user if the variable passed into the subtraction function is not a number.
 // Use the two sets of test variables provided below. Expected output: "Your input is not a number", 3
 // Hint: There is an operator in JavaScript called typeof :)
+
+
 
 var numberExampleRefactor1 = 42
 var numberExampleRefactor2 = "hello"
