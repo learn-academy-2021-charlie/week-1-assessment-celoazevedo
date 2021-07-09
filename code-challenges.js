@@ -97,9 +97,27 @@ console.log(subtractSmallFromLarge(numberExample3, numberExample4))
 // Hint: There is an operator in JavaScript called typeof :)
 
 
-
 var numberExampleRefactor1 = 42
 var numberExampleRefactor2 = "hello"
 
 var numberExampleRefactor3 = 27
 var numberExampleRefactor4 = 24
+
+// Use the same logic as in question 4 but now add a condition to check the data type of the input using the typeof operator.
+// !! - Also dont forget to change the name of the vairable that you are assigning the new function to, (the name of the function). So that we are not trying to reasign a
+// value to a variable that was previously declared using the const declaration. 
+
+const subtractSmallFromLargeRefactored = (num1, num2) => {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number'){
+        return "At least one of your inputs is not a number"
+    } else if (num1 < num2) {
+        return num2 - num1
+    } else if (num1 > num2) {
+        return num1 - num2
+    } else {
+        return `${num1} is equal to ${num2}`
+    }
+}
+
+console.log(subtractSmallFromLargeRefactored(numberExampleRefactor1, numberExampleRefactor2))
+console.log(subtractSmallFromLargeRefactored(numberExampleRefactor3, numberExampleRefactor4))
