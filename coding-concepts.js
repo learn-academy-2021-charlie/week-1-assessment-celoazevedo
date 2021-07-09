@@ -28,10 +28,13 @@ console.log(greeting[3])
 
 var languages = ["JavaScript", "Ruby", "Python", "C++"]
 var index = 1
-// console.log(languages[index])
+console.log(languages[index])
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: it will log the element in the array located in the index position 1. In this case a string with a value 'Ruby'.
+// b) Verify and explain: We can access elements in an array using the same braket notation that we used in the question above with the string data type.
+//    In the scenarion above, we are declaring 2 variables. In one we are assiging an array with 4 elements and the other the value 1.
+//    The variable index is assigned a value of 1. And the index variable with a value of 1 is being used inside the 
+//    braket notation to access the element located at the index 1 position in the array, which is the second element in the array ('Ruby').
 
 
 // --------------------4) What will this log?
