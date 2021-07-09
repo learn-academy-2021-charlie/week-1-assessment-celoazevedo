@@ -49,7 +49,7 @@ var weekendDays = ["saturday", "sunday"]
                         // TypeError: weekendDays.toUpperCase is not a function
 //    My understanding now is that toUpperCase() is a string method and not and an array method. In order to use
 //    the toUpperCase() method to convert the letters of the string elements in the array, we need to access the individual elements (which in our case are strings)
-//    and apply the method to each element. To do this I believe that we need to iterate through the array.
+//    and apply the method to each element. To do this we need to iterate through the array using a forloop of we could also use the higher order functions .map() or .forEach
 
 
 // --------------------5) What will this log?
