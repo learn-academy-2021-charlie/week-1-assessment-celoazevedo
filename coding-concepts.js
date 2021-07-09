@@ -59,4 +59,5 @@ console.log(typeof dataTypes.length)
 
 // a) Your answer: it will log the data type of the result from when you apply the length property to the dataTypes array. In this case the array
 //    have 3 elements so dataTypes.length will be equal the number 3. So the console should log the string 'number'.
-// b) Verify and explain: Yay! I got this one.
+// b) Verify and explain: the .length property when applied to an array or a string will output data of type number that represents the number of elements in the array
+//    or number of characters in a string.
