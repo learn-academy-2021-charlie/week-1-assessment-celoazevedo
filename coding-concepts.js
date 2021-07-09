@@ -42,14 +42,21 @@ console.log(languages[index])
 var weekendDays = ["saturday", "sunday"]
 // console.log(weekendDays.toUpperCase())
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: it will log the weekendDays array will the string elements inside with all of its letters converted to large uppercase letters. ["SATURDAY", "SUNDAY"]
+// b) Verify and explain: I was wrong. Here is my error: console.log(weekendDays.toUpperCase())
+                        // ^
+
+                        // TypeError: weekendDays.toUpperCase is not a function
+//    My understanding now is that toUpperCase() is a string method and not and an array method. In order to use
+//    the toUpperCase() method to convert the letters of the string elements in the array, we need to access the individual elements (which in our case are strings)
+//    and apply the method to each element. To do this I believe that we need to iterate through the array.
 
 
 // --------------------5) What will this log?
 
 var dataTypes = ["number", "string", "Boolean"]
-// console.log(typeof dataTypes.length)
+console.log(typeof dataTypes.length)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: it will log the data type of the result from when you apply the length property to the dataTypes array. In this case the array
+//    have 3 elements so dataTypes.length will be equal the number 3. So the console should log the string 'number'.
+// b) Verify and explain: Yay! I got this one.
