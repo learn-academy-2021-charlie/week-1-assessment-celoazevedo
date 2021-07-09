@@ -54,7 +54,17 @@ console.log(twoArrInOne(myNumbers2, myNumbers1))
 var myString1 = "bravo"
 var myString2 = "charlie"
 
+// creat a funciton with one parameter (in this case a string). 
+// use the string split method to separed each character in the string
+// use the string reverse method to reverse the order of the characters in the string
+// use the join method to join all of the character into one string
 
+const reverseWord = (word) => {
+    return word.split('').reverse().join('')
+}
+
+console.log(reverseWord(myString1))
+console.log(reverseWord(myString2))
 
 // --------------------4) Create a function that takes in two numbers and subtracts the smaller number from the larger number.
 // Use the two sets of test variables provided below. Expected output: 15, 12
