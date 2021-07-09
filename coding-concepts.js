@@ -8,10 +8,10 @@
 // --------------------1) What will this log?
 
 var cohort = "Charlie 2021"
-// console.log(cohort.length)
+console.log(cohort.length)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: the output will be the number of characters in the string. In this case 12 (count the space as a character).
+// b) Verify and explain: when you apply the length property on a string the output will be the number of characters on that string.
 
 
 // --------------------2) What will this log?
