@@ -14,13 +14,33 @@ var temp1 = 35
 var temp2 = 350
 var temp3 = 212
 
+// create a function with one parameter.
+// check the value of the argument that will be passed in by using conditinal statements.
+// in the conditions, check if it is equal to 212, smaller than 212 or larger than 212 (in the code below the larger than condition is covered by the else 'catch all').
 
+const boiling = (temperature) => {
+    if (temperature === 212) {
+        return `${temperature} is at boiling point`
+    } else if (temperature < 212) {
+        return `${temperature} is below boiling point`
+    } else {
+        return `${temperature} is above boiling point`
+    }
+}
+
+console.log(boiling(temp1))
+console.log(boiling(temp2))
+console.log(boiling(temp3))
 
 // --------------------2) Create a function that takes in two arrays of numbers and returns a single array with all the values sorted least to greatest.
 // Use the test variables provided below. Expected output: [-9, -7, 0, 3, 7, 8, 9, 13, 22, 36]
 
 var myNumbers1 = [3, 7, 0, 36, -9]
 var myNumbers2 = [8, -7, 22, 9, 13]
+
+// create a function with two parameters (in this case we will be passing in 2 arrays).
+// use the concat() built in array method to return a single array with the elements from both arrays that will be passed in as arguments.
+// use the arrays sort() method to sort the elements inside the new array
 
 const twoArrInOne = (arr1, arr2) => {
     return arr1.concat(arr2).sort((a, b) => a - b)
