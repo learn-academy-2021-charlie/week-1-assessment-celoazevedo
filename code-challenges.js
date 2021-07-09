@@ -22,7 +22,11 @@ var temp3 = 212
 var myNumbers1 = [3, 7, 0, 36, -9]
 var myNumbers2 = [8, -7, 22, 9, 13]
 
+const twoArrInOne = (arr1, arr2) => {
+    return arr1.concat(arr2).sort((a, b) => a - b)
+}
 
+console.log(twoArrInOne(myNumbers2, myNumbers1))
 
 // --------------------3) Create a function that takes in a string of a single word and returns the string with all letters reversed.
 // Use the test variables provided below. Expected output: "ovarb", "eilrahc"

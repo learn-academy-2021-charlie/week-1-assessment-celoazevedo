@@ -17,9 +17,9 @@ console.log(cohort.length)
 // --------------------2) What will this log?
 
 var greeting = "Hello World!"
-// console.log(greeting[3])
+console.log(greeting[3])
 
-// a) Your answer:
+// a) Your answer: it will log the value of the character at the index 3 position. In this case it will be the letter 'l'.
 // b) Verify and explain:
 
 
