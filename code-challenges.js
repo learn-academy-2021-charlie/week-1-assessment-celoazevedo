@@ -15,8 +15,9 @@ var temp2 = 350
 var temp3 = 212
 
 // create a function with one parameter.
-// check the value of the argument that will be passed in by using conditinal statements.
-// in the conditions, check if it is equal to 212, smaller than 212 or larger than 212 (in the code below the larger than condition is covered by the else 'catch all').
+// check the value of the argument that will be passed in by using conditional statements.
+// in the conditions, check if it is equal to 212, smaller than 212 or larger than 212 using the comparison operators 
+// (in the code below the larger than condition is covered by the else 'catch all').
 
 const boiling = (temperature) => {
     if (temperature === 212) {
@@ -40,7 +41,8 @@ var myNumbers2 = [8, -7, 22, 9, 13]
 
 // create a function with two parameters (in this case we will be passing in 2 arrays).
 // use the concat() built in array method to return a single array with the elements from both arrays that will be passed in as arguments.
-// use the arrays sort() method to sort the elements inside the new array
+// use the arrays sort() method to sort the elements inside the new array - in order for the sort() method to work (sort properly) we need to 
+// supply a function as the argument of .sort() that will compare elements in the array.
 
 const twoArrInOne = (arr1, arr2) => {
     return arr1.concat(arr2).sort((a, b) => a - b)
@@ -54,9 +56,9 @@ console.log(twoArrInOne(myNumbers2, myNumbers1))
 var myString1 = "bravo"
 var myString2 = "charlie"
 
-// creat a funciton with one parameter (in this case a string). 
-// use the string split method to separate each character in the string and store the characters as elements in an array.
-// use the string reverse method to reverse the order of the order of the elements in the array
+// creat a funciton with one parameter (in this case the argumnet that will be passed in will be a string). 
+// use the string split method to separate each character in the string and store the characters as individual elements in an array.
+// use the string reverse method to reverse the order of the elements in the array
 // use the join method to join all of the string elements in the array and convert it into one string
 
 const reverseWord = (word) => {
@@ -76,8 +78,8 @@ var numberExample3 = 7
 var numberExample4 = 19
 
 // create a function with two parametes (in this case the funciton will be taking two numbers as arguments).
-// use conditional statements to check which number is the largest
-// subtract the smaller from the largest
+// use conditional statements and check which number is the largest using the 
+// subtract the smaller from the largest using the comparison operators.
 
 const subtractSmallFromLarge = (num1, num2) => {
     if (num1 < num2) {
@@ -103,7 +105,8 @@ var numberExampleRefactor2 = "hello"
 var numberExampleRefactor3 = 27
 var numberExampleRefactor4 = 24
 
-// Use the same logic as in question 4 but now add a condition to check the data type of the input using the typeof operator.
+// Use the same logic as in question 4 but now add a condition to check the data type of the input using the typeof operator. If the data type of 
+// the input is not a number, than let the user knows that the input is not a number.
 // !! - Also dont forget to change the name of the vairable that you are assigning the new function to, (the name of the function). So that we are not trying to reasign a
 // value to a variable that was previously declared using the const declaration. 
 
